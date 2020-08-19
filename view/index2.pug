@@ -1,0 +1,12 @@
+h3 Thy dễ thương
+a(href="/users/create") NEW
+
+form(action="/users/search",method="get")
+  input(type="text",name="q")
+  button Search
+
+
+ul
+  each user in users
+    li= user.name
+
